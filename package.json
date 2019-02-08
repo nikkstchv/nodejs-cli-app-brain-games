@@ -1,6 +1,6 @@
 {
   "name": "braingamekstchv1",
-  "version": "2.0.0",
+  "version": "3.1.0",
   "description": "brain-games project",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
@@ -25,6 +25,7 @@
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
+    "@babel/preset-flow": "^7.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
