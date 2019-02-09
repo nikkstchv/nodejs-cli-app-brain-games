@@ -7,7 +7,6 @@ const askName = () => {
 };
 
 const evenNum = () => {
-  welcome();
   const userName = askName();
   for (let i = 0; i < 3; i += 1) {
     const number = Math.round(1 + Math.random() * (100 - 1));
