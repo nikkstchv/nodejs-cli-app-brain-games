@@ -2,3 +2,4 @@
 /dist/
 *.log
 .module.exports.swp
+.eslintrc.js
