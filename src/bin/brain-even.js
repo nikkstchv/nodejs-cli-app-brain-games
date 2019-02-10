@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
-import { evenNum } from '..';
+import { welcome, gameName, evenNum } from '..';
 
-console.log('Welcome to the Brain Games!');
-console.log('Answer "yes" if number even otherwise answer "no".');
-
+welcome();
+gameName();
 evenNum();
