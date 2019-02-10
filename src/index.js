@@ -6,18 +6,26 @@ const askName = () => {
   return userName;
 };
 
+const welcome = () => {
+  console.log('Welcome to the Brain Games!');
+};
 
-const evenNum = () => {
+const gameName = () => {
+  console.log('Answer "yes" if number even otherwise answer "no".');
+};
+
+const isEven = number => number % 2 === 0;
+const iterMax = 3;
+const max = 100;
+const min = 1;
+
+:const evenNum = () => {
   const userName = askName();
-  const iterMax = 3;
   for (let iter = 0; iter < iterMax; iter += 1) {
-    const max = 100;
-    const min = 1;
     const question = Math.round(min + (Math.random() * (max - min)));
     const answer = readlineSync.question(`Question: ${question} `);
     console.log(`Your answer: ${answer}`);
 
-    const isEven = number => number % 2 === 0;
     const correctAnswer = isEven(question) ? 'yes' : 'no';
     if (answer === correctAnswer) {
       console.log('Correct!');
