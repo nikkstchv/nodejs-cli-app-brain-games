@@ -10,7 +10,11 @@ const welcome = () => {
   console.log('Welcome to the Brain Games!');
 };
 
-const gameName = () => {
+const calcGreeting = () => {
+  console.log('What is the result of the expression?');
+};
+
+const evenGreeting = () => {
   console.log('Answer "yes" if number even otherwise answer "no".');
 };
 
@@ -39,5 +43,5 @@ const evenNum = () => {
   console.log(`Congratulations, ${userName}`);
 };
 export {
-  welcome, gameName, askName, evenNum,
+  welcome, evenGreeting, calcGreeting, askName, evenNum,
 };

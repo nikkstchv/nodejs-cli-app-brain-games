@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { welcome, gameName, evenNum } from '..';
+import { welcome, evenGreeting, evenNum } from '..';
 
 welcome();
-gameName();
+evenGreeting();
 evenNum();
