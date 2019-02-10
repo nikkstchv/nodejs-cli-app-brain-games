@@ -19,7 +19,7 @@ const iterMax = 3;
 const max = 100;
 const min = 1;
 
-:const evenNum = () => {
+const evenNum = () => {
   const userName = askName();
   for (let iter = 0; iter < iterMax; iter += 1) {
     const question = Math.round(min + (Math.random() * (max - min)));
@@ -38,4 +38,6 @@ const min = 1;
 
   console.log(`Congratulations, ${userName}`);
 };
-export { askName, evenNum };
+export {
+  welcome, gameName, askName, evenNum,
+};
