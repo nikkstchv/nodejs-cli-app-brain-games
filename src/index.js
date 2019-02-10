@@ -18,7 +18,9 @@ const askName = () => {
     const question = Math.round(min + (Math.random() * (max - min))),
     const answer = readlineSync.question(`Question: ${question} `);
     console.log(`Your answer: ${answer}`);
-    const correctAnswer = question % 2 === 0 ? 'yes' : 'no';
+
+    const isEven = number => number % 2 === 0;
+    const correctAnswer = isEven(question) ? 'yes' : 'no';
     if (answer === correctAnswer) {
 
       console.log('Correct!');
@@ -27,7 +29,7 @@ const askName = () => {
 
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
       console.log(`Let's try again, ${userName}`);
-
+      return;
      }
 
     }
