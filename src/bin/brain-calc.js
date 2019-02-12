@@ -1,6 +1,6 @@
-i#!/usr/bin/env node
+#!/usr/bin/env node
 
-import { welcome, calcGreeting} from '..';
+import { welcome, calcGreeting } from '..';
 
 welcome();
 calcGreeting();
