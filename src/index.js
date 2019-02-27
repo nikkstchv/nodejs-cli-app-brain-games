@@ -62,7 +62,7 @@ const evenNum = () => {
 const calc = () => {
   const userName = askName();
   for (let iter = 0; iter < iterMax; iter += 1) {
-    const question = `${randomNum} ${randomOperator} ${randomNum}`;
+    const question = `${randomNum} ${randomOperator()} ${randomNum}`;
     const answer = readlineSync.question(`Question: ${question} `);
     console.log(`Your answer: ${answer}`);
 
