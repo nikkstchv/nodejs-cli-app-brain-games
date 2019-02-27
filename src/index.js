@@ -19,15 +19,17 @@ const evenGreeting = () => {
 };
 
 const iterMax = 3;
-const max = 50;
-const min = 1;
+
 const isEven = number => number % 2 === 0;
-const randomNum = Math.round(min + (Math.random() * (max - min)));
-const randomNum2 = Math.round(min + (Math.random() * (max - min)));
-const getRandomInt = (miN, maX) => Math.floor(Math.random() * (maX - miN)) + miN;
+
+const generateNumber = (min, max) => {
+  const result = Math.round(Math.random() * (max - min) + min);
+  return result;
+};
+
 const randomOperator = () => {
   let operator;
-  const randomNumber = getRandomInt(1, 4);
+  const randomNumber = generateNumber(1, 4);
   switch (randomNumber) {
     case 1: operator = '+';
       break;
@@ -43,7 +45,7 @@ const randomOperator = () => {
 const evenNum = () => {
   const userName = askName();
   for (let iter = 0; iter < iterMax; iter += 1) {
-    const question = Math.round(min + (Math.random() * (max - min)));
+    const question = generateNumber(1, 100);
     const answer = readlineSync.question(`Question: ${question} `);
     console.log(`Your answer: ${answer}`);
 
@@ -64,7 +66,7 @@ const evenNum = () => {
 const calc = () => {
   const userName = askName();
   for (let iter = 0; iter < iterMax; iter += 1) {
-    const question = `${randomNum} ${randomOperator()} ${randomNum2}`;
+    const question = `${generateNumber(1, 10)} ${randomOperator()} ${generateNumber(1, 10)}`;
     const answer = readlineSync.question(`Question: ${question} `);
     console.log(`Your answer: ${answer}`);
 
