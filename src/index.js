@@ -27,22 +27,25 @@ const generateNumber = (min, max) => {
   return result;
 };
 
-const randomOperator = () => {
-  let operator;
+const randomExpression = () => {
+  let exp;
+  const num1 = generateNumber(1, 15);
+  const num2 = generateNumber(1, 15);
   const randomNumber = generateNumber(1, 4);
   switch (randomNumber) {
-    case 1: operator = '+';
+    case 1: exp = `${num1} + ${num2}`;
       break;
-    case 2: operator = '-';
+    case 2: exp = `${num1} - ${num2}`;
       break;
-    case 3: operator = '*';
+    case 3: exp = `${num1} * ${num2}`;
       break;
     default: break;
   }
-  return operator;
+  return exp;
 };
 
 const evenNum = () => {
+  welcome();
   const userName = askName();
   for (let iter = 0; iter < iterMax; iter += 1) {
     const question = generateNumber(1, 100);
@@ -64,9 +67,10 @@ const evenNum = () => {
 
 // решил пока написать функцию отдельно, т.к. пока даже она не работает
 const calc = () => {
+  welcome();
   const userName = askName();
   for (let iter = 0; iter < iterMax; iter += 1) {
-    const question = `${generateNumber(1, 10)} ${randomOperator()} ${generateNumber(1, 10)}`;
+    const question = randomExpression();
     const answer = readlineSync.question(`Question: ${question} `);
     console.log(`Your answer: ${answer}`);
 
