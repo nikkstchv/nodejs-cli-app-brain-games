@@ -19,10 +19,11 @@ const evenGreeting = () => {
 };
 
 const iterMax = 3;
-const max = 100;
+const max = 50;
 const min = 1;
 const isEven = number => number % 2 === 0;
 const randomNum = Math.round(min + (Math.random() * (max - min)));
+const randomNum2 = Math.round(min + (Math.random() * (max - min)));
 const getRandomInt = (miN, maX) => Math.floor(Math.random() * (maX - miN)) + miN;
 const randomOperator = () => {
   let operator;
@@ -62,11 +63,12 @@ const evenNum = () => {
 const calc = () => {
   const userName = askName();
   for (let iter = 0; iter < iterMax; iter += 1) {
-    const question = `${randomNum} ${randomOperator()} ${randomNum}`;
+    const question = `${randomNum} ${randomOperator()} ${randomNum2}`;
     const answer = readlineSync.question(`Question: ${question} `);
     console.log(`Your answer: ${answer}`);
 
     const correctAnswer = Number(question);
+    console.log(correctAnswer);
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
