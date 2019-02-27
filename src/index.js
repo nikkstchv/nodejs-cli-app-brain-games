@@ -18,8 +18,6 @@ const evenGreeting = () => {
   console.log('Answer "yes" if number even otherwise answer "no".');
 };
 
-const iterMax = 3;
-
 const isEven = number => number % 2 === 0;
 
 const generateNumber = (min, max) => {
@@ -31,19 +29,18 @@ const randomExpression = () => {
   let exp;
   const num1 = generateNumber(1, 15);
   const num2 = generateNumber(1, 15);
-  const randomNumber = generateNumber(1, 4);
+  const randomNumber = generateNumber(1, 3);
   switch (randomNumber) {
     case 1: exp = `${num1} + ${num2}`;
       break;
     case 2: exp = `${num1} - ${num2}`;
       break;
-    case 3: exp = `${num1} * ${num2}`;
-      break;
-    default: break;
+    default: exp = `${num1} * ${num2}`;
   }
   return exp;
 };
 
+const iterMax = 3;
 const evenNum = () => {
   welcome();
   const userName = askName();
@@ -61,11 +58,9 @@ const evenNum = () => {
       return;
     }
   }
-
   console.log(`Congratulations, ${userName}`);
 };
 
-// решил пока написать функцию отдельно, т.к. пока даже она не работает
 const calc = () => {
   welcome();
   const userName = askName();
@@ -74,7 +69,7 @@ const calc = () => {
     const answer = readlineSync.question(`Question: ${question} `);
     console.log(`Your answer: ${answer}`);
 
-    const correctAnswer = Number(question); // возвращает NaN не пойму как сделать
+    const correctAnswer = Number(question);
     console.log(correctAnswer);
     if (answer === correctAnswer) {
       console.log('Correct!');
@@ -84,7 +79,6 @@ const calc = () => {
       return;
     }
   }
-
   console.log(`Congratulations, ${userName}`);
 };
 
