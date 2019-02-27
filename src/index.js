@@ -14,10 +14,6 @@ const calcGreeting = () => {
   console.log('What is the result of the expression?');
 };
 
-const evenGreeting = () => {
-  console.log('Answer "yes" if number even otherwise answer "no".');
-};
-
 const isEven = number => number % 2 === 0;
 
 const generateNumber = (min, max) => {
@@ -39,10 +35,13 @@ const randomExpression = () => {
   }
   return exp;
 };
-
+const evenGreeting = () => {
+  console.log('Answer "yes" if number even otherwise answer "no".');
+};
 const iterMax = 3;
 const evenNum = () => {
   welcome();
+  evenGreeting();
   const userName = askName();
   for (let iter = 0; iter < iterMax; iter += 1) {
     const question = generateNumber(1, 100);
