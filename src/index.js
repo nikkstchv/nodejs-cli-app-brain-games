@@ -60,6 +60,7 @@ const evenNum = () => {
   console.log(`Congratulations, ${userName}`);
 };
 
+// решил пока написать функцию отдельно, т.к. пока даже она не работает
 const calc = () => {
   const userName = askName();
   for (let iter = 0; iter < iterMax; iter += 1) {
@@ -67,7 +68,7 @@ const calc = () => {
     const answer = readlineSync.question(`Question: ${question} `);
     console.log(`Your answer: ${answer}`);
 
-    const correctAnswer = Number(question);
+    const correctAnswer = Number(question); // возвращает NaN не пойму как сделать
     console.log(correctAnswer);
     if (answer === correctAnswer) {
       console.log('Correct!');
