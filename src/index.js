@@ -23,13 +23,20 @@ const max = 100;
 const min = 1;
 const isEven = number => number % 2 === 0;
 const randomNum = Math.round(min + (Math.random() * (max - min)));
-const randomOperation = () => {
-  let result = '';
-  const possible = '+-*';
-  for (let i = 0; i < 5; i += 1) {
-    result += possible.charAt(Math.floor(Math.random() * possible.length));
+const getRandomInt = (miN, maX) => Math.floor(Math.random() * (maX - miN)) + miN;
+const randomOperator = () => {
+  let operator;
+  const randomNumber = getRandomInt(1, 4);
+  switch (randomNumber) {
+    case 1: operator = '+';
+      break;
+    case 2: operator = '-';
+      break;
+    case 3: operator = '*';
+      break;
+    default: break;
   }
-  return result;
+  return operator;
 };
 
 const evenNum = () => {
@@ -55,7 +62,7 @@ const evenNum = () => {
 const calc = () => {
   const userName = askName();
   for (let iter = 0; iter < iterMax; iter += 1) {
-    const question = `${randomNum} ${randomOperation} ${randomNum}`;
+    const question = `${randomNum} ${randomOperator} ${randomNum}`;
     const answer = readlineSync.question(`Question: ${question} `);
     console.log(`Your answer: ${answer}`);
 
