@@ -1,7 +1,12 @@
-import { engine, generateNumber } from '..';
+import { engine } from '..';
 import { cons } from 'hexlet-pairs';
 
 const greeting = 'What is the result of the expression?';
+
+const generateNumber = (min, max) => {
+  const result = Math.round(Math.random() * (max - min) + min);
+  return result;
+};
 
 const calcData = () => {
   let question = '';

@@ -32,4 +32,4 @@ const engine = (gameGreeting, gameData) => {
   console.log(`Congratulations, ${userName}`);
 };
 
-export default engine;
+export { askName, engine };
