@@ -7,6 +7,10 @@
     "brain-calc": "dist/bin/brain-calc.js",
     "brain-even": "dist/bin/brain-even.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikkstchv/project-lvl1-s454"
+  },
   "files": [
     "dist"
   ],
