@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { welcome, calcGreeting, calc } from '..';
+import start from '../games/calc';
 
-welcome();
-calcGreeting();
-calc();
+start();
