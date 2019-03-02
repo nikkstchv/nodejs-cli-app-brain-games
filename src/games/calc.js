@@ -1,13 +1,8 @@
 import { engine } from '..';
 import { cons } from 'hexlet-pairs';
-import { generateNumber } from './utils';
+import { generateNumber } from '../utils';
 
 const greeting = 'What is the result of the expression?';
-
-const generateNumber = (min, max) => {
-  const result = Math.round(Math.random() * (max - min) + min);
-  return result;
-};
 
 const calcData = () => {
   let question;
