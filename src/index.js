@@ -4,11 +4,13 @@ import { car, cdr } from 'hexlet-pairs';
 const welcome = () => {
   console.log('Welcome to the Brain Games!');
 };
+
 const askName = () => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   return userName;
 };
+
 const iterMax = 3;
 
 const engine = (gameGreeting, gameData) => {

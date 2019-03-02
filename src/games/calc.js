@@ -1,5 +1,6 @@
 import { engine } from '..';
 import { cons } from 'hexlet-pairs';
+import { generateNumber } from './utils';
 
 const greeting = 'What is the result of the expression?';
 
@@ -9,10 +10,12 @@ const generateNumber = (min, max) => {
 };
 
 const calcData = () => {
-  let question = '';
-  let answer = 0;
+  let question;
+  let answer;
+
   const num1 = generateNumber(1, 15);
   const num2 = generateNumber(1, 15);
+
   const randomNumber = generateNumber(1, 3);
   switch (randomNumber) {
     case 1: question = `${num1} + ${num2}`;
