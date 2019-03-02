@@ -11,8 +11,8 @@ const calcData = () => {
   const num1 = generateNumber(1, 15);
   const num2 = generateNumber(1, 15);
 
-  const genPairOfQuestionAndAnswer = generateNumber(1, 3);
-  switch (genPairOfQuestionAndAnswer) {
+  const generateOperation = generateNumber(1, 3);
+  switch (generateOperation) {
     case 1: question = `${num1} + ${num2}`;
       answer = num1 + num2;
       break;

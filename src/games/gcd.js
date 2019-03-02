@@ -16,7 +16,7 @@ const gcdData = () => {
   const num1 = generateNumber(1, 15);
   const num2 = generateNumber(1, 15);
   const question = `${num1} ${num2}`;
-  return cons(question, String(answer));
+  return cons(question, String(answer(num1, num2)));
 };
 
 

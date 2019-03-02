@@ -9,7 +9,7 @@ const isEven = number => number % 2 === 0;
 const evenData = () => {
   const question = generateNumber(1, 100);
   const correctAnswer = isEven(question) ? 'yes' : 'no';
-  return cons(question, String(correctAnswer));
+  return cons(question, correctAnswer);
 };
 
 export default () => engine(greeting, evenData);
