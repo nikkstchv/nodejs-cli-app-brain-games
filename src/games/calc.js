@@ -1,6 +1,6 @@
 import { engine } from '..';
 import { cons } from 'hexlet-pairs';
-import { generateNumber } from '../utils';
+import generateNumber from '../utils';
 
 const greeting = 'What is the result of the expression?';
 
@@ -11,8 +11,8 @@ const calcData = () => {
   const num1 = generateNumber(1, 15);
   const num2 = generateNumber(1, 15);
 
-  const randomNumber = generateNumber(1, 3);
-  switch (randomNumber) {
+  const genPairOfQuestionAndAnswer = generateNumber(1, 3);
+  switch (genPairOfQuestionAndAnswer) {
     case 1: question = `${num1} + ${num2}`;
       answer = num1 + num2;
       break;

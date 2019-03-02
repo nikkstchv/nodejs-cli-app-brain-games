@@ -1,6 +1,6 @@
 import { engine } from '..';
 import { cons } from 'hexlet-pairs';
-import { generateNumber } from '../utils';
+import generateNumber from '../utils';
 
 const greeting = 'Answer "yes" if number even otherwise answer "no".';
 
