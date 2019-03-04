@@ -18,11 +18,12 @@ const engine = (gameGreeting, gameData) => {
   console.log(gameGreeting);
   const userName = askName();
   for (let iter = 0; iter < iterMax; iter += 1) {
-    const question = car(gameData);
+    const data = gameData();
+    const question = car(data);
     const answer = readlineSync.question(`Question: ${question} `);
     console.log(`Your answer: ${answer}`);
 
-    const correctAnswer = cdr(gameData);
+    const correctAnswer = cdr(data);
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
