@@ -1,6 +1,6 @@
 {
   "name": "brain-gameskstchv1",
-  "version": "3.6.2",
+  "version": "3.6.5",
   "description": "brain-games project",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",

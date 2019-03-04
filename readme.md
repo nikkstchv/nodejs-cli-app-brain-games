@@ -2,6 +2,8 @@
 
 [_asciinema brain-calc_](https://asciinema.org/a/lzaUXbTzukCABNaOGmKCXeY6d)
 
+[_asciinema brain-gcd_](https://asciinema.org/a/yKzRGd6HYn69FiU6LJO1fY0k0)
+
 [_asciinema brain-progression_](https://asciinema.org/a/Nq7UXm9iJSsStZnDxnZPGPEHv)
 
 [_asciinema brain-prime_](https://asciinema.org/a/3JRZDclTzWRlMiuEsta2BgFf3)
