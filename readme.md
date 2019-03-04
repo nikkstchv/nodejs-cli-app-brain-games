@@ -1,6 +1,9 @@
 [_asciinema brain-even_](https://asciinema.org/a/hQ4t8VlGzT186GsioJzSDUoSo)
+
 [_asciinema brain-calc_](https://asciinema.org/a/lzaUXbTzukCABNaOGmKCXeY6d)
+
 [_asciinema brain-progression_](https://asciinema.org/a/Nq7UXm9iJSsStZnDxnZPGPEHv)
+
 [_asciinema brain-prime_](https://asciinema.org/a/3JRZDclTzWRlMiuEsta2BgFf3)
 
 [![Build Status](https://travis-ci.org/nikkstchv/project-lvl1-s442.svg?branch=master)](https://travis-ci.org/nikkstchv/project-lvl1-s454)
