@@ -16,10 +16,10 @@ const isPrime = (num) => {
   return true;
 };
 
-const evenData = () => {
+const primeData = () => {
   const question = generateNumber(1, 3571);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return cons(question, correctAnswer);
 };
 
-export default () => engine(greeting, evenData);
+export default () => engine(greeting, primeData);
