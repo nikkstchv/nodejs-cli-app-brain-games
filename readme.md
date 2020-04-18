@@ -1,3 +1,5 @@
+Набор мини-игр, запускаемых из консоли.
+
 [_asciinema brain-even_](https://asciinema.org/a/hQ4t8VlGzT186GsioJzSDUoSo)
 
 [_asciinema brain-calc_](https://asciinema.org/a/lzaUXbTzukCABNaOGmKCXeY6d)
